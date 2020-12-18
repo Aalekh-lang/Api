@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'employeeapi',
+    'retailerapi',
     'rest_framework'
 ]
 
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'restfulapicrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'restfullapiDB',
+        'NAME': 'RetailerDataApiDB',
         'USER':'postgres',
         'PASSWORD':'abc123',
         'HOST':'localhost'
