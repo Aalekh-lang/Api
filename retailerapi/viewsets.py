@@ -12,6 +12,7 @@ class ProductViewset(viewsets.ModelViewSet):
 
 	def get_queryset(self):
 	 	branchname = self.request.query_params.get('BR_Code', None)
+	 	Retailerid = self.request.query_params.get('Retailerid', None)
 	 	queryset = models.productcodepriceapi.objects.filter(BR_Code=branchname)
 	 	#all()
 	 	#filter(Branch=branchname)
@@ -25,6 +26,7 @@ class ProductViewsetPrice(viewsets.ModelViewSet):
 
 	def get_queryset(self):
 	 	branchname = self.request.query_params.get('branchname', None)
+	 	Retailerid = self.request.query_params.get('Retailerid', None)
 	 	queryset = models.productcodepriceapi.objects.all()
 	 	#filter(Branch=branchname)
 	 	return queryset
@@ -36,8 +38,9 @@ class ProductViewsetPaymentMode(viewsets.ModelViewSet):
 	queryset = models.productrevenuedeatils_paymentmode.objects.all()
 	 #filter(branch=store_id)
 
-	# def get_queryset(self):
-	#  	branchname = self.request.query_params.get('branchname', None)
-	#  	queryset = models.productrevenuedeatils_paymentmode.objects.filter(BR_Code=branchname)
-	#  	#filter(Branch=branchname)
-	#  	return queryset
+	def get_queryset(self):
+	 	branchname = self.request.query_params.get('branchname', None)
+	 	Retailerid = self.request.query_params.get('Retailerid', None)
+	 	queryset = models.productrevenuedeatils_paymentmode.objects.filter(BR_Code=branchname)
+	 	#filter(Branch=branchname)
+	 	return queryset

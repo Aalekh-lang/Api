@@ -18,6 +18,7 @@ class customFloatField(models.Field):
 
 class productcodepriceapi(models.Model):
     #Branch    = models.CharField(max_length=20)
+
     BR_Code= models.CharField(max_length=20)
     P_Code= models.CharField(max_length=20)
     MRP= models.IntegerField(max_length=20)
@@ -25,10 +26,12 @@ class productcodepriceapi(models.Model):
     Discount= models.CharField(max_length=20)
     Brand= models.CharField(max_length=20)
     BalanceQuantity= models.IntegerField(max_length=20)
+    Retailer_ID=models.IntegerField()
 
 class productrevenuedeatils_paymentmode(models.Model):
     BR_Code= models.CharField(max_length=20) 
     TransactionNumber= models.IntegerField(max_length=20)
     SaleAmount=models.IntegerField(max_length=20)
     Narration= models.CharField(max_length=20)
+    Retailer_ID=models.IntegerField()
 
