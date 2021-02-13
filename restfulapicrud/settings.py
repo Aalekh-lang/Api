@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'restfulapicrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'RetailerDataApiDB',
-        'USER':'postgres',
-        'PASSWORD':'abc123',
-        'HOST':'localhost'
+        'NAME': 'd77603ualqc1l6',
+        'USER':'vnwuywwmhuxylw',
+        'PASSWORD':'79182baeaaa00b774ab83f8c0eea024b0a860268599a2b9098b8eef8764affef',
+        'HOST':'ec2-35-174-118-71.compute-1.amazonaws.com'
     }
 }
 
