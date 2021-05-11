@@ -10,8 +10,8 @@ from django.db import models
     # Create / Insert / Add - POST
     # Retrieve /  Fetch - GET
     # Update / Edit - PUT
-    # Delete / Remove - DELETE 
-
+    # Delete / Remove - DELETE   
+    
 class customFloatField(models.Field): 
     def db_type(self,connection):
         return 'float'
@@ -22,7 +22,7 @@ class productcodepriceapi(models.Model):
     BR_Code= models.CharField(max_length=20)
     P_Code= models.CharField(max_length=20)
     MRP= models.IntegerField(max_length=20)
-    Sale_Rate= models.DecimalField(max_digits=19, decimal_places=16)
+    Sale_Rate= customFloatField(null=True,blank=True)
     Discount= models.CharField(max_length=20)
     Brand= models.CharField(max_length=20)
     BalanceQuantity= models.IntegerField(max_length=20)
