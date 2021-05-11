@@ -22,7 +22,7 @@ class productcodepriceapi(models.Model):
     BR_Code= models.CharField(max_length=20)
     P_Code= models.CharField(max_length=20)
     MRP= models.IntegerField(max_length=20)
-    Sale_Rate= models.IntegerField(max_length=20)
+    Sale_Rate= models.DecimalField(max_digits=19, decimal_places=16)
     Discount= models.CharField(max_length=20)
     Brand= models.CharField(max_length=20)
     BalanceQuantity= models.IntegerField(max_length=20)
