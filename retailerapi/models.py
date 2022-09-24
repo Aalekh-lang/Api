@@ -25,7 +25,7 @@ class productcodepriceapi(models.Model):
     Sale_Rate= customFloatField(null=True,blank=True)
     Discount= models.CharField(max_length=20)
     Brand= models.CharField(max_length=20)
-    BalanceQuantity= models.IntegerField(max_length=20)
+    BalanceQuantity= models.CharField(max_length=20)
     Retailer_ID=models.IntegerField()
 
 class productrevenuedeatils_paymentmode(models.Model):
