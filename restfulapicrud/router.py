@@ -1,10 +1,11 @@
-from retailerapi.viewsets import ProductViewset , ProductViewsetPrice, ProductViewsetPaymentMode
+from retailerapi.viewsets import ProductViewset , ProductViewsetPrice, ProductViewsetPaymentMode,ProductQuantitySerializer_Update
 from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('ProductPrice',ProductViewset),
 router.register('ProductQuantity',ProductViewsetPrice)
-router.register('ProductPaymentMode',ProductViewsetPaymentMode)  
+router.register('ProductPaymentMode',ProductViewsetPaymentMode)
+router.register('ProductUpdate',ProductQuantitySerializer_Update) 
 
 
 
