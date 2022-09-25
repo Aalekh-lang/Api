@@ -21,4 +21,10 @@ class ProductQuantitySerializer(serializers.ModelSerializer):
 class ProductPaymentModeSerializer(serializers.ModelSerializer):
     class Meta:
         model = productrevenuedeatils_paymentmode#Employee
-        fields =  ('BR_Code' , 'TransactionNumber' ,'SaleAmount', 'Narration','Retailer_ID')#
+        fields =  ('BR_Code' , 'TransactionNumber' ,'SaleAmount', 'Narration','Retailer_ID')
+
+  
+class ProductQuantitySerializerUpdate(serializers.ModelSerializer):
+    class Meta:
+        model = productcodepriceapi#Employee
+        fields =  ('BR_Code' , 'P_Code' ,'BalanceQuantity','Retailer_ID')
