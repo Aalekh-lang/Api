@@ -1,7 +1,7 @@
 asn1crypto==0.24.0
 autopep8==1.4.3
 certifi==2019.3.9
-cffi==1.12.3
+cffi
 chardet==3.0.4
 coverage==4.5.3
 coveralls==1.7.0
